@@ -8,7 +8,7 @@ namespace _14
         {
             byte healthHero = 100;
             sbyte armorEnemy = 100;
-            short temp = 50;
+            short temperature = 50;
             ushort amountGold = 1000;
             int sleepTime = 2000;
             uint yearCount = 2;
