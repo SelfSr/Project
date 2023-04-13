@@ -10,10 +10,10 @@ namespace _14
             int totalPictures = 52;
             int PicturesInRow = 3;
 
-            int numberOfRows = totalPictures / PicturesInRow;
+            int filledRows = totalPictures / PicturesInRow;
             int leftPictures = totalPictures % PicturesInRow;
 
-            Console.WriteLine($"Количество полностью заполненых рядов - {numberOfRows}, оставшиеся картинки - {leftPictures}");
+            Console.WriteLine($"Количество полностью заполненых рядов - {filledRows}, оставшиеся картинки - {leftPictures}");
         }
     }
 }
