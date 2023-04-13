@@ -13,9 +13,9 @@ namespace _14
 
             Console.Write("Введите количество людей перед вами: ");
             amountPeople = int.Parse(Console.ReadLine());
-            timeWaitMinutes = amountPeople * timeForPersonInMinutes % minutesInHour;
-            timeWaitHour = amountPeople * timeForPersonInMinutes / minutesInHour;
-
+            amountPeople *= timeForPersonInMinutes;
+            timeWaitMinutes = amountPeople % minutesInHour;
+            timeWaitHour = amountPeople / minutesInHour;
             if (timeWaitHour == 0)
                 Console.WriteLine($"Вы должны отстоять в очереди {timeWaitMinutes} м..");
             else if (timeWaitMinutes == 0)
