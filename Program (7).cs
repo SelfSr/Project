@@ -1,6 +1,4 @@
-﻿using System;
-
-
+using System;
 namespace _14
 {
     internal class Program
@@ -15,7 +13,6 @@ namespace _14
 
             Console.Write("Введите количество людей перед вами: ");
             amountPeople = int.Parse(Console.ReadLine());
-
             timeWaitMinutes = amountPeople * timeForPersonInMinutes % minutesInHour;
             timeWaitHour = amountPeople * timeForPersonInMinutes / minutesInHour;
 
