@@ -13,7 +13,6 @@ namespace _14
             amountGold = int.Parse(Console.ReadLine());
             Console.WriteLine($"\nЦена за один кристалл - {priseCrystal} золота.\nСколько хотите купить кристаллов?");
             crystalsToBuy = int.Parse(Console.ReadLine());
-            
             amountGold -= crystalsToBuy * priseCrystal;
             Console.WriteLine($"\nВы купили {crystalsToBuy} кристаллов, у вас осталось {amountGold} золота.");
         }
